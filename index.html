@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TNEB Bill Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tamil Nadu Electricity Bill Calculator</h1>
+    <div class="card">     
+      <label for="connection">Select Connection Type:</label>
+      <select id="connection">
+        <option value="Domestic">Domestic</option>
+        <option value="NonDomestic">Non-Domestic</option>
+        <option value="Agricultural">Agricultural</option>
+        <option value="Industrial">Industrial</option>
+      </select>
+      <label for="units">Enter Units Consumed:</label>
+      <input type="number" id="units" placeholder="Eg: 350">
+      <button onclick="calculateBill()">Calculate</button>
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
